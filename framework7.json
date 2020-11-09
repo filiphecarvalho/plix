@@ -1,0 +1,42 @@
+{
+  "cwd": "/workspace/plix",
+  "type": [
+    "web",
+    "pwa",
+    "cordova"
+  ],
+  "name": "plix",
+  "pkg": "io.plix.com",
+  "framework": "react",
+  "template": "split-view",
+  "cssPreProcessor": false,
+  "bundler": "webpack",
+  "cordova": {
+    "folder": "cordova",
+    "platforms": [
+      "ios",
+      "android",
+      "electron"
+    ],
+    "plugins": [
+      "cordova-plugin-statusbar",
+      "cordova-plugin-keyboard",
+      "cordova-plugin-splashscreen"
+    ]
+  },
+  "webpack": {
+    "developmentSourceMap": true,
+    "productionSourceMap": true,
+    "hashAssets": false,
+    "preserveAssetsPaths": false,
+    "inlineAssets": true
+  },
+  "theming": {
+    "customColor": false,
+    "color": "#007aff",
+    "darkTheme": false,
+    "iconFonts": true,
+    "fillBars": false
+  },
+  "customBuild": false
+}
